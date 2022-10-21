@@ -12,7 +12,7 @@ public class PrimeiraClasseJava {
 		/*new aluno() é uma instância (criação do objeto)*/
 		/*aluno1 é uma referência para o objeto Aluno*/
 		
-	String nome = JOptionPane.showInputDialog("Qual é o nome do aluno: ");
+	/*String nome = JOptionPane.showInputDialog("Qual é o nome do aluno: ");
 	String idade = JOptionPane.showInputDialog("Qual é a idade do aluno: ");
 	String dataNascimento = JOptionPane.showInputDialog("Qual é a data de nascimento do aluno: ");
 	String RegistroGeral = JOptionPane.showInputDialog("Qual é o RG do aluno: ");
@@ -56,9 +56,33 @@ public class PrimeiraClasseJava {
 	System.out.println("Segunda nota: " + aluno1.getNota2());
 	System.out.println("Terceira nota: " + aluno1.getNota3());
 	System.out.println("Quarta nota: " + aluno1.getNota4());
-	System.out.println("Média das notas: " + aluno1.getMediaNota());
-	System.out.println("Resultado: " + (aluno1.getAlunoAprovado() ? " Aprovado " : " Reprovado "));
-	System.out.println("");
+	System.out.println("");*/
+		
+		
+		//System.out.println(aluno1.toString());/*Descrição do Objeto na memória, com o toString.*/
+		//System.out.println("Média do Aluno: " + aluno1.getMediaNota());
+		//System.out.println("Resultado: " + (aluno1.getAlunoAprovado() ? " Aprovado " : " Reprovado "));
+		
+		/*Equals e HashCode( Diferenciar e comparar Objetos)*/
+		
+		Aluno aluno1 = new Aluno();
+		aluno1.setNome("Alex");
+		aluno1.setNumeroCpf("123");
+		
+		Aluno aluno2 = new Aluno();
+		aluno2.setNome("Alex");
+		aluno2.setNumeroCpf("1234");
+		
+		if (aluno1.equals(aluno2)) {
+			System.out.println("Alunos são iguais");
+		} else {
+			System.out.println("Alunos não são iguais");
+		}
+		
+		
+		
+		
+		
 
 			
 	}
